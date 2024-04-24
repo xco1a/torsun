@@ -9,6 +9,9 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@umijs/preset-react": "^2.1.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "umi": "^4.1.10"
   },
   "devDependencies": {
