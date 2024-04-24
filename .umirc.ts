@@ -3,7 +3,8 @@ import { defineConfig } from "umi";
 export default defineConfig({
   routes: [
     { path: "/", component: "index" },
-    { path: "/docs", component: "docs" },
   ],
-  npmClient: 'yarn',
+  theme: {
+    "primary-color": "#026eb8",
+  }
 });
