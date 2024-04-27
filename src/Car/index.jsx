@@ -3,26 +3,27 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Nav3 from './Nav3';
-import Banner1 from './Banner1';
-import Content13 from './Content13';
+import Banner3 from './Banner3';
+import Feature4 from './Feature4';
 import Feature5 from './Feature5';
-import Feature1 from './Feature1';
-import Feature2 from './Feature2';
-import Feature0 from './Feature0';
-import Footer0 from './Footer0';
+import Content0 from './Content0';
+import Content1 from './Content1';
+import Content3 from './Content3';
+import Nav3 from '../Home/Nav3';
+import Footer0 from '../Home/Footer0';
+import { Nav30DataSource,Footer00DataSource } from '../Home/data.source';
 
 import {
-  Nav30DataSource,
-  Banner10DataSource,
-  Content130DataSource,
+  Banner30DataSource,
+  Feature40DataSource,
   Feature50DataSource,
-  Feature10DataSource,
-  Feature20DataSource,
-  Feature00DataSource,
-  Footer00DataSource,
+  Content00DataSource,
+  Content10DataSource,
+  Content30DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
+
+import CarLevel from '@/assets/car_level.png'
 
 let isMobile;
 enquireScreen((b) => {
@@ -66,46 +67,45 @@ export default class Home extends React.Component {
         dataSource={Nav30DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Banner1
-        id="Banner1_0"
-        key="Banner1_0"
-        dataSource={Banner10DataSource}
+      <Banner3
+        id="Banner3_0"
+        key="Banner3_0"
+        dataSource={Banner30DataSource}
         isMobile={this.state.isMobile}
       />,
-      // <Content13
-      //   id="Content13_0"
-      //   key="Content13_0"
-      //   dataSource={Content130DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
-      // <Feature5
-      //   id="Feature5_0"
-      //   key="Feature5_0"
-      //   dataSource={Feature50DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
-      <h1 className='home-title' style={{marginTop:48}}>解决方案</h1>,
-      <Feature0
-        id="Feature0_0"
-        key="Feature0_0"
-        dataSource={Feature00DataSource}
+      <h1 className='home-title' style={{marginTop:48}}>车辆监控定位系统方案</h1>,
+      <Feature4
+        id="Feature4_0"
+        key="Feature4_0"
+        dataSource={Feature40DataSource}
         isMobile={this.state.isMobile}
       />,
-      <h1 className='home-title'>推荐产品</h1>,
-      <Feature1
-        id="Feature1_0"
-        key="Feature1_0"
-        dataSource={Feature10DataSource}
+      <h1 className='home-title' style={{marginTop:48,marginBottom:48}}>车辆监控定位系统功能</h1>,
+      <img src={CarLevel} className='hover-scale' style={{display: 'block',width:'100%',height:'auto',margin: 'auto',maxWidth: '1200px'}} />,
+      <Feature5
+        id="Feature5_0"
+        key="Feature5_0"
+        dataSource={Feature50DataSource}
         isMobile={this.state.isMobile}
       />,
-      // <h1 className='home-title'>新闻资讯</h1>,
-      // <Feature2
-      //   id="Feature2_0"
-      //   key="Feature2_0"
-      //   dataSource={Feature20DataSource}
+      // <Content0
+      //   id="Content0_0"
+      //   key="Content0_0"
+      //   dataSource={Content00DataSource}
       //   isMobile={this.state.isMobile}
       // />,
-      
+      // <Content1
+      //   id="Content1_0"
+      //   key="Content1_0"
+      //   dataSource={Content10DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
+      // <Content3
+      //   id="Content3_0"
+      //   key="Content3_0"
+      //   dataSource={Content30DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
       <Footer0
         id="Footer0_0"
         key="Footer0_0"

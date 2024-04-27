@@ -1,0 +1,116 @@
+@content7: car-content7;
+.@{content7}-wrapper {
+  min-height: 720px;
+  ;
+  .@{content7} {
+    padding-top: 32px;
+    h1{
+      border-bottom: 1px solid #c5c5c5;
+      width: 80%;
+      margin: auto;
+    }
+
+    >h1,
+    >p {
+      text-align: center;
+    }
+    &-tag {
+      & i {
+        width: 12px;
+        height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      &-name {
+        display: inline-block;
+      }
+    }
+    .ant-tabs-bar {
+      text-align: center;
+    }
+    .ant-tabs {
+      .ant-tabs-nav {
+        float: none;
+        text-align: center;
+        margin: auto;
+        .ant-tabs-nav-wrap {
+          .ant-tabs-nav-list{
+            .ant-tabs-tab{
+              .ant-tabs-tab-btn{
+                .car-content7-tag{
+                  span{
+                    display: none;
+                  }
+                  div{
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &-tabs-wrapper {
+      position: relative;
+      margin-top: -24px;
+    }
+    &-content {
+      display: flex;
+      align-items: center;
+    }
+    &-text {
+      padding: 24px 48px;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .rotating-image {
+      width: 150px; /* 或者任何你想要设置的图片宽度 */
+      height: auto; /* 高度自适应，保持图片的原始宽高比 */
+      animation: rotate 95s linear infinite; /* 应用动画 */
+    }
+    &-img {
+      padding: 24px 48px;
+    }
+    .ant-tabs-tabpane {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{content7}-wrapper {
+    min-height: 980px;
+    overflow: hidden;
+    .@{content7} {
+      max-width: 100%;
+      
+      
+      &-content {
+        display: block;
+      }
+      &-text,
+      &-img {
+        text-align: left;
+        padding: 0;
+      }
+      &-img {
+        margin-top: 32px;
+      }
+      .ant-tabs-bar {
+        width: auto;
+        .ant-tabs-nav {
+          float: left;
+        }
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@
   dependencies:
     "@ctrl/tinycolor" "^3.4.0"
 
-"@ant-design/compatible@^4":
+"@ant-design/compatible@^1":
   version "1.1.2"
   resolved "https://registry.npmmirror.com/@ant-design/compatible/-/compatible-1.1.2.tgz#61a4f82627065c7135ae3695b78ec63342182fb6"
   integrity sha512-Qsx5Qw97eiSgcxyQDlY45QSbvGn0gUdpX8XFImPvzZpKwabqQ2HnXXuUlb8RbrkURswaPIoyLEGKDPeogIaURA==

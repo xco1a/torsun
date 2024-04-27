@@ -1,0 +1,95 @@
+@content6: car-content6;
+.@{content6}-wrapper {
+  padding-top: 32px;
+
+  min-height: 720px;
+  .@{content6} {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &-text {
+      min-height: 424px;
+      padding-right: 24px;
+      >*.queue-anim-leaving {
+        position: relative !important;
+      }
+      .title-h1 {
+        position: relative;
+        margin: 0 0 16px;
+        text-align: left;
+        font-size: 2em;
+      }
+      .title-content {
+        font-size: 1.5em;
+        position: relative;
+        margin-bottom: 64px;
+        text-align: left;
+      }
+      ul {
+        position: relative;
+        display: inline-block;
+        li {
+          margin-bottom: 24px;
+          height: 30px;
+          .@{content6}-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+          }
+          .@{content6}-title,
+          .@{content6}-content {
+            margin-left: 45px;
+          }
+          .@{content6}-title {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+          .@{content6}-content {
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    &-img {
+      min-height: 296px;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{content6}-wrapper {
+    height: 860px;
+    overflow: hidden;
+    .@{content6} {
+      display: block;
+      &-img,
+      &-text {
+        display: block;
+        width: 100%;
+      }
+      &-text {
+        >h1,
+        >p {
+          text-align: center;
+        }
+        > h1 {
+          margin: 56px auto 16px;
+        }
+        p {
+          margin-bottom: 32px;
+        }
+      }
+      &-img {
+        margin-top: 20px;
+      }
+    }
+  }
+}

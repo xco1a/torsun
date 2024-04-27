@@ -3,7 +3,6 @@ import QueueAnim from 'rc-queue-anim';
 import { Row, Col } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from './utils';
-import './less/antMotionStyle.less';
 
 class Content extends React.PureComponent {
   render() {

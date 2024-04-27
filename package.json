@@ -2,7 +2,7 @@
   "name": "torsun",
   "private": true,
   "scripts": {
-    "start": "umi dev",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && umi dev",
     "build": "umi build"
   },
   "dependencies": {

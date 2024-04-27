@@ -1,5 +1,11 @@
 import React from 'react';
+import { history } from 'umi';
+
 import Logo from '../assets/logo.png';
+import HomeBoxPng from '@/assets/home_box.png'
+import CarPng from '@/assets/car.png'
+import FirePng from '@/assets/fire.png'
+
 export const Nav30DataSource = {
   wrapper: { className: 'header3 home-page-wrapper' },
   page: { className: 'home-page' },
@@ -14,31 +20,36 @@ export const Nav30DataSource = {
         name: 'item0',
         className: 'header3-item',
         children: {
+          href: '/',
+          children: [{ children: '首页', name: 'text' }],
+        },
+
+      },
+      {
+        name: 'item1',
+        className: 'header3-item',
+        children: {
           href: '#',
-          children: [{ children: '导航一', name: 'text' }],
+          children: [{ children: '核心产品', name: 'text' }],
         },
         subItem: [
           {
             name: 'sub0',
             className: 'item-sub',
+            href: '/car',
+            onClick: () => history.push('/car'),
             children: {
               className: 'item-sub-item',
               children: [
                 {
-                  name: 'image0',
-                  className: 'item-image',
-                  children:
-                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                },
-                {
                   name: 'title',
                   className: 'item-title',
-                  children: 'Ant Design',
+                  children: '高精度车辆监控定位',
                 },
                 {
                   name: 'content',
                   className: 'item-content',
-                  children: '企业级 UI 设计体系',
+                  children: 'UWB超宽带 + VRH视觉识别系统级方案',
                 },
               ],
             },
@@ -46,24 +57,19 @@ export const Nav30DataSource = {
           {
             name: 'sub1',
             className: 'item-sub',
+            onClick: () => history.push('/fire'),
             children: {
               className: 'item-sub-item',
               children: [
                 {
-                  name: 'image0',
-                  className: 'item-image',
-                  children:
-                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                },
-                {
                   name: 'title',
                   className: 'item-title',
-                  children: 'Ant Design',
+                  children: 'AI火焰识别',
                 },
                 {
                   name: 'content',
                   className: 'item-content',
-                  children: '企业级 UI 设计体系',
+                  children: '实时识别火灾隐患',
                 },
               ],
             },
@@ -71,29 +77,14 @@ export const Nav30DataSource = {
         ],
       },
       {
-        name: 'item1',
-        className: 'header3-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航二', name: 'text' }],
-        },
-      },
-      {
         name: 'item2',
         className: 'header3-item',
         children: {
           href: '#',
-          children: [{ children: '导航三', name: 'text' }],
+          children: [{ children: '关于我们', name: 'text' }],
         },
       },
-      {
-        name: 'item3',
-        className: 'header3-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航四', name: 'text' }],
-        },
-      },
+
     ],
   },
   mobileMenu: { className: 'header3-mobile-menu' },
@@ -109,14 +100,13 @@ export const Banner10DataSource = {
         bg: { className: 'bg bg0' },
         title: {
           className: 'banner1-title',
-          children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+          children: '拓晟数创视觉科技',
         },
         content: {
           className: 'banner1-content',
-          children: '一个高效的页面动画解决方案',
+          children: 'AI视觉识别解决方案提供商',
         },
-        button: { className: 'banner1-button', children: 'Learn More' },
+        button: { className: 'banner1-button', children: '' },
       },
       {
         name: 'elem1',
@@ -126,7 +116,7 @@ export const Banner10DataSource = {
         title: {
           className: 'banner1-title',
           children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+            '',
         },
         content: {
           className: 'banner1-content',
@@ -142,7 +132,7 @@ export const Banner10DataSource = {
         title: {
           className: 'banner1-title',
           children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+            '',
         },
         content: {
           className: 'banner1-content',
@@ -153,288 +143,79 @@ export const Banner10DataSource = {
     ],
   },
 };
-export const Content130DataSource = {
-  OverPack: {
-    className: 'home-page-wrapper content13-wrapper',
-    playScale: 0.3,
-  },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'image',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
-        className: 'title-image',
-      },
-      { name: 'title', children: '丰富的特色展台', className: 'title-h1' },
-      {
-        name: 'content',
-        children:
-          '特色展台包括 Ant Design 、AntV、AntG、Egg 等明星产品，更有产品专家',
-        className: 'title-content',
-      },
-      {
-        name: 'content2',
-        children: '现场问诊，为你答疑解难',
-        className: 'title-content',
-      },
-    ],
-  },
-};
-export const Feature50DataSource = {
-  wrapper: { className: 'home-page-wrapper content7-wrapper' },
-  page: { className: 'home-page content7' },
-  OverPack: {},
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'title',
-        children: '蚂蚁金融云提供专业的服务',
-        className: 'title-h1',
-      },
-      { name: 'content', children: '基于阿里云计算强大的基础资源' },
-    ],
-  },
-  tabsWrapper: { className: 'content7-tabs-wrapper' },
-  block: {
-    children: [
-      {
-        name: 'block0',
-        tag: {
-          className: 'content7-tag',
-          text: { children: 'PHONE', className: 'content7-tag-name' },
-          icon: { children: 'mobile' },
-        },
-        content: {
-          className: 'content7-content',
-          text: {
-            className: 'content7-text',
-            md: 14,
-            xs: 24,
-            children: (
-              <span>
-                <h3>技术</h3>
-                <p>
-                  丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。
-                </p>
-                <br />
-                <h3>融合</h3>
-                <p>
-                  解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。解放业务及技术生产力，推动金融服务底层创新。
-                </p>
-                <br />
-                <h3>
-                  开放
-                </h3>符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。
-              </span>
-            ),
-          },
-          img: {
-            className: 'content7-img',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/xBrUaDROgtFBRRL.png',
-            md: 10,
-            xs: 24,
-          },
-        },
-      },
-      {
-        name: 'block1',
-        tag: {
-          className: 'content7-tag',
-          icon: { children: 'tablet' },
-          text: { className: 'content7-tag-name', children: 'TABLET' },
-        },
-        content: {
-          className: 'content7-content',
-          text: {
-            className: 'content7-text',
-            md: 14,
-            xs: 24,
-            children: (
-              <span>
-                <h3>技术</h3>
-                <p>
-                  丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。
-                </p>
-                <br />
-                <h3>融合</h3>
-                <p>
-                  解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。解放业务及技术生产力，推动金融服务底层创新。
-                </p>
-                <br />
-                <h3>
-                  开放
-                </h3>符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。
-              </span>
-            ),
-          },
-          img: {
-            className: 'content7-img',
-            md: 10,
-            xs: 24,
-            children:
-              'https://zos.alipayobjects.com/rmsportal/xBrUaDROgtFBRRL.png',
-          },
-        },
-      },
-      {
-        name: 'block2',
-        tag: {
-          className: 'content7-tag',
-          text: { children: 'DESKTOP', className: 'content7-tag-name' },
-          icon: { children: 'laptop' },
-        },
-        content: {
-          className: 'content7-content',
-          text: {
-            className: 'content7-text',
-            md: 14,
-            xs: 24,
-            children: (
-              <span>
-                <h3>技术</h3>
-                <p>
-                  丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。
-                </p>
-                <br />
-                <h3>融合</h3>
-                <p>
-                  解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。解放业务及技术生产力，推动金融服务底层创新。
-                </p>
-                <br />
-                <h3>
-                  开放
-                </h3>符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。
-              </span>
-            ),
-          },
-          img: {
-            className: 'content7-img',
-            md: 10,
-            xs: 24,
-            children:
-              'https://zos.alipayobjects.com/rmsportal/xBrUaDROgtFBRRL.png',
-          },
-        },
-      },
-    ],
-  },
-};
+
 export const Feature10DataSource = {
   wrapper: { className: 'home-page-wrapper content1-wrapper' },
   OverPack: { className: 'home-page content1', playScale: 0.3 },
   imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
   img: {
-    children: 'https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png',
+    children: HomeBoxPng,
   },
   textWrapper: { className: 'content1-text', md: 14, xs: 24 },
-  title: { className: 'content1-title', children: '企业资源管理' },
+  title: { className: 'content1-title', children: '边缘计算智能分析盒' },
   content: {
     className: 'content1-content',
-    children:
-      '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
+    children: '集视频接入、数据传输、数据存储、视觉分析算法、视频流媒体等多种技术为一体的边缘计算产品。',
   },
 };
-export const Feature20DataSource = {
-  wrapper: { className: 'home-page-wrapper content2-wrapper' },
-  OverPack: { className: 'home-page content2', playScale: 0.3 },
-  imgWrapper: { className: 'content2-img', md: 10, xs: 24 },
-  img: {
-    children: 'https://zos.alipayobjects.com/rmsportal/tvQTfCupGUFKSfQ.png',
-  },
-  textWrapper: { className: 'content2-text', md: 14, xs: 24 },
-  title: { className: 'content2-title', children: '分布式中间件' },
-  content: {
-    className: 'content2-content',
-    children:
-      '金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。',
-  },
-};
+
 export const Feature00DataSource = {
-  wrapper: { className: 'home-page-wrapper content0-wrapper' },
-  page: { className: 'home-page content0' },
+  wrapper: { className: 'home-page-wrapper home-content0-wrapper' },
+  page: { className: 'home-page home-content0' },
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
-    children: [{ name: 'title', children: '产品与服务' }],
+    children: [],
   },
   childWrapper: {
-    className: 'content0-block-wrapper',
+    className: 'home-content0-block-wrapper',
     children: [
       {
-        name: 'block0',
-        className: 'content0-block',
-        md: 8,
-        xs: 24,
-        children: {
-          className: 'content0-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'content0-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
-            },
-            {
-              name: 'title',
-              className: 'content0-block-title',
-              children: '一站式业务接入',
-            },
-            { name: 'content', children: '支付、结算、核算接入产品效率翻四倍' },
-          ],
-        },
-      },
-      {
         name: 'block1',
-        className: 'content0-block',
-        md: 8,
+        className: 'home-content0-block hover-scale',
+        md: 12,
         xs: 24,
         children: {
-          className: 'content0-block-item',
+          className: 'home-content0-block-item',
           children: [
             {
               name: 'image',
-              className: 'content0-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+              className: 'home-content0-block-icon',
+              children: <img src={CarPng} alt="car" />,
             },
             {
               name: 'title',
-              className: 'content0-block-title',
-              children: '一站式事中风险监控',
+              className: 'home-content0-block-title',
+              children: '高精度车辆监控定位系统',
             },
             {
               name: 'content',
-              children: '在所有需求配置环节事前风险控制和质量控制能力',
+              children: '利用UWB(超宽带)技术定位和VRH(视觉识别)视频监控的系统级方案',
             },
           ],
         },
       },
       {
         name: 'block2',
-        className: 'content0-block',
-        md: 8,
+        className: 'home-content0-block  hover-scale',
+        md: 12,
         xs: 24,
         children: {
-          className: 'content0-block-item',
+          className: 'home-content0-block-item',
           children: [
             {
               name: 'image',
-              className: 'content0-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+              className: 'home-content0-block-icon',
+              children: <img src={FirePng} alt="fire" />,
             },
             {
               name: 'title',
-              className: 'content0-block-title',
-              children: '一站式数据运营',
+              className: 'home-content0-block-title',
+              children: '人工智能火焰识别系统',
             },
             {
               name: 'content',
-              children: '沉淀产品接入效率和运营小二工作效率数据',
+              children: '实时检测识别各种类型的火焰，有效预防火灾隐患',
             },
           ],
         },
@@ -449,7 +230,7 @@ export const Footer00DataSource = {
     className: 'copyright',
     children: (
       <span>
-        ©2018 <a href="https://motion.ant.design">Ant Motion</a> All Rights
+        ©2024 <a href="#">苏州拓晟数创视觉科技有限公司</a> All Rights
         Reserved
       </span>
     ),
