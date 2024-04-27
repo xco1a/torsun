@@ -3,22 +3,22 @@ import CarArch from '@/assets/car_arch.png'
 import PointLine from '@/assets/point_line.png'
 
 export const Banner30DataSource = {
-  wrapper: { className: 'banner3' },
+  wrapper: { className: 'car-banner3' },
   textWrapper: {
-    className: 'banner3-text-wrapper',
+    className: 'car-banner3-text-wrapper',
     children: [
       {
         name: 'slogan',
-        className: 'banner3-slogan',
+        className: 'car-banner3-slogan',
         children: '高精度车辆监控定位系统',
         texty: true,
       },
       {
         name: 'name',
-        className: 'banner3-name',
+        className: 'car-banner3-name',
         children: '厂区人员定位、车站作业车辆监控、仓储物料监管等场景解决方案',
       },
-      { name: 'button', className: 'banner3-button', children: '了解更多' },
+      { name: 'button', className: 'car-banner3-button', children: '了解更多' },
 
     ],
   },

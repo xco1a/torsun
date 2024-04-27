@@ -115,12 +115,11 @@ export const Banner10DataSource = {
         bg: { className: 'bg bg1' },
         title: {
           className: 'banner1-title',
-          children:
-            '',
+          children: '高精度车辆监控定位系统',
         },
         content: {
           className: 'banner1-content',
-          children: '一个高效的页面动画解决方案',
+          children: '厂区人员定位、车站作业车辆监控、仓储物料监管等场景解决方案',
         },
         button: { className: 'banner1-button', children: 'Learn More' },
       },
@@ -128,15 +127,14 @@ export const Banner10DataSource = {
         name: 'elem2',
         BannerElement: { className: 'banner-user-elem' },
         textWrapper: { className: 'banner1-text-wrapper' },
-        bg: { className: 'bg bg1' },
+        bg: { className: 'bg bg2' },
         title: {
           className: 'banner1-title',
-          children:
-            '',
+          children: 'AI火焰识别系统',
         },
         content: {
           className: 'banner1-content',
-          children: '一个高效的页面动画解决方案',
+          children: '实时检测识别各种类型的火焰，有效预防火灾隐患',
         },
         button: { className: 'banner1-button', children: 'Learn More' },
       },
