@@ -57,7 +57,7 @@ class Content7 extends React.Component {
             <div key="title" {...dataSource.titleWrapper}>
               {dataSource.titleWrapper.children.map(getChildrenToRender)}
             </div>
-            <QueueAnim
+            {/* <QueueAnim
               component="ul"
               key="ul"
               type={queue}
@@ -65,7 +65,7 @@ class Content7 extends React.Component {
               {...dataSource.block}
             >
               {ulChildren}
-            </QueueAnim>
+            </QueueAnim> */}
           </QueueAnim>
           <TweenOne
             key="img"

@@ -40,3 +40,23 @@ h6 {
   padding: 0;
   margin: 0;
 }
+
+.home-title {
+  text-align: center;
+  border-bottom: 1px solid #c5c5c5;
+  width: 80%;
+  margin: auto;
+}
+
+.hover-scale {
+  /* 过渡效果，指定变换和持续时间 */
+  transition: transform 0.3s ease-in-out;
+  /* 默认的变换比例 */
+  transform: scale(1)!important;
+  cursor: default;
+}
+
+/* 当鼠标悬停在元素上时，应用放大效果 */
+.hover-scale:hover {
+  transform: scale(1.1)!important; /* 放大到1.1倍 */
+}

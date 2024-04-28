@@ -7,7 +7,6 @@ import Banner3 from './Banner3';
 import Feature4 from './Feature4';
 import Feature5 from './Feature5';
 import Content0 from './Content0';
-import Content1 from './Content1';
 import Content3 from './Content3';
 import Nav3 from '../Home/Nav3';
 import Footer0 from '../Home/Footer0';
@@ -18,7 +17,6 @@ import {
   Feature40DataSource,
   Feature50DataSource,
   Content00DataSource,
-  Content10DataSource,
   Content30DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
@@ -77,24 +75,25 @@ export default class Home extends React.Component {
         dataSource={Feature40DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Feature5
-        id="Feature5_0"
-        key="Feature5_0"
-        dataSource={Feature50DataSource}
-        isMobile={this.state.isMobile}
-      />,
+      
       <Content0
         id="Content0_0"
         key="Content0_0"
         dataSource={Content00DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content1
-        id="Content1_0"
-        key="Content1_0"
-        dataSource={Content10DataSource}
+      <Feature5
+        id="Feature5_0"
+        key="Feature5_0"
+        dataSource={Feature50DataSource}
         isMobile={this.state.isMobile}
       />,
+      // <Content1
+      //   id="Content1_0"
+      //   key="Content1_0"
+      //   dataSource={Content10DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
       <Content3
         id="Content3_0"
         key="Content3_0"

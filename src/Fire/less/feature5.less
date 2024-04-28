@@ -1,7 +1,17 @@
-@content7: content7;
+@content7: fire-content7;
 .@{content7}-wrapper {
   min-height: 720px;
+  ;
   .@{content7} {
+    padding-top: 32px;
+    padding-bottom: 0;
+    h1{
+      border-bottom: 1px solid #c5c5c5;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+
     >h1,
     >p {
       text-align: center;
@@ -25,11 +35,28 @@
       .ant-tabs-nav {
         float: none;
         text-align: center;
+        margin: auto;
+        .ant-tabs-nav-wrap {
+          .ant-tabs-nav-list{
+            .ant-tabs-tab{
+              .ant-tabs-tab-btn{
+                .fire-content7-tag{
+                  span{
+                    display: none;
+                  }
+                  div{
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     &-tabs-wrapper {
       position: relative;
-      margin-top: 24px;
+      margin-top: 32px;
     }
     &-content {
       display: flex;
@@ -37,6 +64,20 @@
     }
     &-text {
       padding: 24px 48px;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .rotating-image {
+      width: 150px; /* 或者任何你想要设置的图片宽度 */
+      height: auto; /* 高度自适应，保持图片的原始宽高比 */
+      animation: rotate 95s linear infinite; /* 应用动画 */
     }
     &-img {
       padding: 24px 48px;
@@ -53,6 +94,8 @@
     overflow: hidden;
     .@{content7} {
       max-width: 100%;
+      
+      
       &-content {
         display: block;
       }
