@@ -7,6 +7,7 @@ import FireFeature3 from '@/assets/fire_feature3.png'
 import FireFeature4 from '@/assets/fire_feature4.png'
 import FireFeature5 from '@/assets/fire_feature5.png'
 import FireFeature6 from '@/assets/fire_feature6.png'
+import {smoothScroll} from '../Car/data.source'
 
 export const Banner30DataSource = {
   wrapper: { className: 'banner3' },
@@ -24,7 +25,7 @@ export const Banner30DataSource = {
         className: 'banner3-name',
         children: '实时识别火灾隐患，提供全方位的安全防护',
       },
-      { name: 'button', className: 'banner3-button', children: '了解更多' },
+      { name: 'button', className: 'banner3-button', children: '了解更多', onClick: () => smoothScroll('Feature4_0') },
     ],
   },
 };

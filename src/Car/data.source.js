@@ -2,23 +2,46 @@ import React from 'react';
 import CarArch from '@/assets/car_arch.png'
 import PointLine from '@/assets/point_line.png'
 
+export function smoothScroll (targetId) {
+  let target = document.getElementById(targetId);
+  let scrollContainer = document.getElementById(targetId);
+  do { 
+      scrollContainer = scrollContainer.parentNode;
+      if (!scrollContainer) return;
+      scrollContainer.scrollTop += 1;
+  } while (scrollContainer.scrollTop == 0);
+
+  let targetY = 0;
+  do { 
+      if (target == scrollContainer) break;
+      targetY += target.offsetTop;
+  } while (target = target.offsetParent);
+
+  scroll = function(c, a, b, i) {
+      i++; if (i > 30) return;
+      c.scrollTop = a + (b - a) / 30 * i;
+      setTimeout(function(){ scroll(c, a, b, i); }, 20);
+  }
+  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
 export const Banner30DataSource = {
-  wrapper: { className: 'car-banner3' },
+  wrapper: { className: 'banner3' },
   textWrapper: {
-    className: 'car-banner3-text-wrapper',
+    className: 'banner3-text-wrapper',
     children: [
       {
         name: 'slogan',
-        className: 'car-banner3-slogan',
+        className: 'banner3-slogan',
         children: '高精度车辆监控定位系统',
         texty: true,
       },
       {
         name: 'name',
-        className: 'car-banner3-name',
+        className: 'banner3-name',
         children: '厂区人员定位、车站作业车辆监控、仓储物料监管等场景解决方案',
       },
-      { name: 'button', className: 'car-banner3-button', children: '了解更多' },
+      { name: 'button', className: 'banner3-button', children: '了解更多', onClick:() => smoothScroll("car-detail-start") },
 
     ],
   },

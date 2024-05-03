@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && umi dev",
+    "dev": "umi dev",
     "build": "umi build"
   },
   "dependencies": {

@@ -6,21 +6,22 @@ import { enquireScreen } from 'enquire-js';
 import Nav3 from './Nav3';
 import Banner1 from './Banner1';
 import Content13 from './Content13';
-import Feature5 from './Feature5';
 import Feature1 from './Feature1';
-import Feature2 from './Feature2';
 import Feature0 from './Feature0';
 import Footer0 from './Footer0';
+// import Content13 from './Content13';
+import Content9 from './Content9';
+import Footer1 from './Footer1';
 
 import {
   Nav30DataSource,
   Banner10DataSource,
-  Content130DataSource,
-  Feature50DataSource,
   Feature10DataSource,
-  Feature20DataSource,
   Feature00DataSource,
   Footer00DataSource,
+  Content130DataSource,
+  Content90DataSource,
+  Footer10DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 
@@ -72,18 +73,6 @@ export default class Home extends React.Component {
         dataSource={Banner10DataSource}
         isMobile={this.state.isMobile}
       />,
-      // <Content13
-      //   id="Content13_0"
-      //   key="Content13_0"
-      //   dataSource={Content130DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
-      // <Feature5
-      //   id="Feature5_0"
-      //   key="Feature5_0"
-      //   dataSource={Feature50DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
       <h1 className='home-title' style={{marginTop:48}}>解决方案</h1>,
       <Feature0
         id="Feature0_0"
@@ -98,18 +87,23 @@ export default class Home extends React.Component {
         dataSource={Feature10DataSource}
         isMobile={this.state.isMobile}
       />,
-      // <h1 className='home-title'>新闻资讯</h1>,
-      // <Feature2
-      //   id="Feature2_0"
-      //   key="Feature2_0"
-      //   dataSource={Feature20DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
-      
-      <Footer0
-        id="Footer0_0"
-        key="Footer0_0"
-        dataSource={Footer00DataSource}
+      <h1 className='home-title'>新闻资讯</h1>,
+      <Content9
+        id="Content9_0"
+        key="Content9_0"
+        dataSource={Content90DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Content13
+        id="Content13_0"
+        key="Content13_0"
+        dataSource={Content130DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Footer1
+        id="Footer1_0"
+        key="Footer1_0"
+        dataSource={Footer10DataSource}
         isMobile={this.state.isMobile}
       />,
     ];
