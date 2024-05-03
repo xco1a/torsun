@@ -82,7 +82,7 @@ export default class Home extends React.Component {
         isMobile={this.state.isMobile}
       />,
       <h1 className='home-title' style={{marginTop:48,marginBottom:48}}>车辆监控定位系统功能</h1>,
-      <img src={CarLevel} className='hover-scale' style={{display: 'block',width:'100%',height:'auto',margin: 'auto',maxWidth: '1200px'}} />,
+      <img src={CarLevel} className='hover-scale' style={{display: 'block',width:'100%',height:'auto',margin: 'auto',padding: '0 24px',maxWidth: '1200px'}} />,
       <Feature5
         id="Feature5_0"
         key="Feature5_0"
