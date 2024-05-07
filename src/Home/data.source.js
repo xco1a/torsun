@@ -33,7 +33,7 @@ export const Nav30DataSource = {
         },
         subItem: [
           {
-            name: "sub0",
+            name: "car",
             className: "item-sub",
             href: "/car",
             onClick: () => history.push("/car"),
@@ -54,7 +54,7 @@ export const Nav30DataSource = {
             },
           },
           {
-            name: "sub1",
+            name: "fire",
             className: "item-sub",
             onClick: () => history.push("/fire"),
             children: {
@@ -76,7 +76,7 @@ export const Nav30DataSource = {
         ],
       },
       {
-        name: "item2",
+        name: "about",
         className: "header3-item",
         children: {
           href: "/about",

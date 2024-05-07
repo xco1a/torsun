@@ -122,6 +122,7 @@ class Header3 extends React.Component {
             <Menu
               mode={isMobile ? 'inline' : 'horizontal'}
               defaultSelectedKeys={['item0']}
+              selectedKeys={[window.location.pathname.split('/')[1] || 'item0']}
               theme="light"
             >
               {navChildren}

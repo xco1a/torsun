@@ -255,7 +255,7 @@ export const Content00DataSource = {
     children: [
       {
         name: 'block0',
-        className: 'fire-content0-block',
+        className: 'fire-content0-block  hover-scale',
         md: 8,
         xs: 24,
         children: {
@@ -277,7 +277,7 @@ export const Content00DataSource = {
       },
       {
         name: 'block1',
-        className: 'fire-content0-block',
+        className: 'fire-content0-block  hover-scale',
         md: 8,
         xs: 24,
         children: {
@@ -302,7 +302,7 @@ export const Content00DataSource = {
       },
       {
         name: 'block2',
-        className: 'fire-content0-block',
+        className: 'fire-content0-block  hover-scale',
         md: 8,
         xs: 24,
         children: {
@@ -327,7 +327,7 @@ export const Content00DataSource = {
       },
       {
         name: 'block0',
-        className: 'fire-content0-block',
+        className: 'fire-content0-block  hover-scale',
         md: 8,
         xs: 24,
         children: {
@@ -349,7 +349,7 @@ export const Content00DataSource = {
       },
       {
         name: 'block1',
-        className: 'fire-content0-block',
+        className: 'fire-content0-block  hover-scale',
         md: 8,
         xs: 24,
         children: {
@@ -374,7 +374,7 @@ export const Content00DataSource = {
       },
       {
         name: 'block2',
-        className: 'fire-content0-block',
+        className: 'fire-content0-block  hover-scale',
         md: 8,
         xs: 24,
         children: {
