@@ -120,7 +120,7 @@ export const Banner10DataSource = {
           children:
             "厂区人员定位、车站作业车辆监控、仓储物料监管等场景解决方案",
         },
-        button: { className: "banner1-button", children: "了解更多",onClick: () => history.push("/car") },
+        button: { className: "banner1-button", children: "了解更多", onClick: () => history.push("/car") },
       },
       {
         name: "elem2",
@@ -135,23 +135,23 @@ export const Banner10DataSource = {
           className: "banner1-content",
           children: "实时检测识别各种类型的火焰，有效预防火灾隐患",
         },
-        button: { className: "banner1-button", children: "了解更多",onClick: () => history.push("/fire") },
+        button: { className: "banner1-button", children: "了解更多", onClick: () => history.push("/fire") },
       },
     ],
   },
 };
 
 export const Feature10DataSource = {
-  wrapper: { className: "home-page-wrapper content1-wrapper" },
-  OverPack: { className: "home-page content1", playScale: 0.3 },
-  imgWrapper: { className: "content1-img", md: 10, xs: 24 },
+  wrapper: { className: "homepage-content1-wrapper home-page-wrapper" },
+  OverPack: { className: "home-page homepage-content1", playScale: 0.3 },
+  imgWrapper: { className: "homepage-content1-img", md: 10, xs: 24 },
   img: {
     children: HomeBoxPng,
   },
-  textWrapper: { className: "content1-text", md: 14, xs: 24 },
-  title: { className: "content1-title", children: "边缘计算智能分析盒" },
+  textWrapper: { className: "homepage-content1-text", md: 14, xs: 24 },
+  title: { className: "homepage-content1-title", children: "边缘计算智能分析盒" },
   content: {
-    className: "content1-content",
+    className: "homepage-content1-content",
     children:
       "集视频接入、数据传输、数据存储、视觉分析算法、视频流媒体等多种技术为一体的边缘计算产品。",
   },
@@ -222,18 +222,7 @@ export const Feature00DataSource = {
     ],
   },
 };
-export const Footer00DataSource = {
-  wrapper: { className: "home-page-wrapper footer0-wrapper" },
-  OverPack: { className: "home-page footer0", playScale: 0.05 },
-  copyright: {
-    className: "copyright",
-    children: (
-      <span>
-        ©2024 <a href="#">苏州拓晟数创视觉科技有限公司</a> All Rights Reserved
-      </span>
-    ),
-  },
-};
+
 
 export const Content130DataSource = {
   OverPack: {
@@ -261,7 +250,7 @@ export const Content130DataSource = {
       {
         name: "content2",
         children: (
-          <div style={{ display: "flex", justifyContent: "center", marginTop: '48px',fontSize:'38px' }}>
+          <div style={{ display: "flex", justifyContent: "center", marginTop: '48px', fontSize: '38px' }}>
             <div style={{ display: "inline-block" }}>
               <svg
                 style={{ width: "54px", height: "54px" }}
@@ -284,7 +273,7 @@ export const Content130DataSource = {
                 ></path>
               </svg>
             </div>
-            <a href='tel:15641696908' style={{ display: "inline-block", lineHeight: "54px",color:'white' }}>
+            <a href='tel:15641696908' style={{ display: "inline-block", lineHeight: "54px", color: 'white' }}>
               156-4169-6908
             </a>
           </div>
@@ -436,7 +425,7 @@ export const Footer10DataSource = {
         className: "block",
         title: {
           className: "logo",
-          children: <img src={Logo} alt="logo" style={{width: '180px',height: '52px',objectFit: 'cover'}} />,
+          children: <img src={Logo} alt="logo" style={{ width: '180px', height: '52px', objectFit: 'cover' }} />,
         },
         childWrapper: {
           className: "slogan",
@@ -474,7 +463,7 @@ export const Footer10DataSource = {
           ],
         },
       },
-      
+
     ],
   },
   copyrightWrapper: { className: "copyright-wrapper" },
@@ -482,9 +471,10 @@ export const Footer10DataSource = {
   copyright: {
     className: "copyright",
     children: (
-      <span>
-         ©2024 <a href="#">苏州拓晟数创视觉科技有限公司</a> All Rights Reserved.&nbsp;&nbsp;LTD苏ICP备11111111号
+      <div><span>
+        ©2024 <a href="#">苏州拓晟数创视觉科技有限公司</a> All Rights Reserved.
       </span>
+      <span>LTD苏ICP备11111111号</span></div>
     ),
   },
 };

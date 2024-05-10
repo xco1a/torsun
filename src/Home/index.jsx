@@ -8,7 +8,6 @@ import Banner1 from './Banner1';
 import Content13 from './Content13';
 import Feature1 from './Feature1';
 import Feature0 from './Feature0';
-import Footer0 from './Footer0';
 // import Content13 from './Content13';
 import Content9 from './Content9';
 import Footer1 from './Footer1';
@@ -18,7 +17,6 @@ import {
   Banner10DataSource,
   Feature10DataSource,
   Feature00DataSource,
-  Footer00DataSource,
   Content130DataSource,
   Content90DataSource,
   Footer10DataSource,

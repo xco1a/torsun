@@ -1,4 +1,4 @@
-@content1: content1;
+@content1: homepage-content1;
 .@{content1}-wrapper {
   height: 360px;
   margin-top: 24px;
@@ -43,18 +43,23 @@
 
 @media screen and (max-width: 767px) {
   .@{content1}-wrapper {
-    height: 600px;
+    height: 500px;
+    margin: 0;
+    margin-bottom: 48px;
     .@{content1} {
+      padding-top: 0!important;
+      
       &-img {
         height: 200px;
         padding: 0;
         text-align: center;
-        margin-top: 64px;
+        margin-top: 24px;
+        margin-bottom: 54px;
         span {
           display: inline-block;
-          width: 180px;
-          height: 200px;
-          line-height: 200px;
+          width: 240px;
+          height: 240px;
+          line-height: 240px;
           margin: auto;
         }
       }
