@@ -28,19 +28,6 @@ function Content1(props) {
   return (
     <div {...tagProps} {...dataSource.wrapper}>
       <OverPack {...dataSource.OverPack} component={Row}>
-        <TweenOne
-          key="img"
-          animation={animType.one}
-          resetStyle
-          {...dataSource.imgWrapper}
-          component={Col}
-          componentProps={{
-            md: dataSource.imgWrapper.md,
-            xs: dataSource.imgWrapper.xs,
-          }}
-        >
-          <h1 className='home-title' style={{marginTop:48}}>关于我们</h1>,
-        </TweenOne>
         <QueueAnim
           key="text"
           type={animType.queue}
@@ -53,11 +40,9 @@ function Content1(props) {
             xs: dataSource.textWrapper.xs,
           }}
         >
-          <h2 key="h1" {...dataSource.title}>
-            {dataSource.title.children}
-          </h2>
-          <div key="p" {...dataSource.content}>
-            {dataSource.content.children}
+          <h1 className='home-title' style={{marginTop:48,marginBottom:48}}>关于我们</h1>
+          <div key="p" {...dataSource.content} style={{textAlign:"center"}}>
+            苏州拓晟数创视觉科技有限公司是一家专注于视觉识别技术的研发和应用的高科技企业，公司致力于为客户提供高精度车辆监控定位系统和人工智能火焰识别系统等解决方案。我们的产品和服务广泛应用于智慧城市、智能交通、智能安防、智能制造等领域，为客户提供更安全、更高效、更智能的解决方案。
           </div>
         </QueueAnim>
       </OverPack>

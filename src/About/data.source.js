@@ -10,8 +10,8 @@ import FirePng from "@/assets/fire.png";
 export const Feature10DataSource = {
   wrapper: { className: "aboutpage-content1-wrapper home-page-wrapper" },
   OverPack: { className: "home-page aboutpage-content1", playScale: 0.3 },
-  imgWrapper: { className: "aboutpage-content1-img", md: 5, xs: 24 },
-  textWrapper: { className: "aboutpage-content1-text", md: 14, xs: 24 },
+  imgWrapper: { className: "aboutpage-content1-img", md: 24, xs: 1 },
+  textWrapper: { className: "aboutpage-content1-text", md: 24, xs: 24 },
   title: { className: "aboutpage-content1-title", children: "" },
   content: {
     className: "aboutpage-content1-content",
