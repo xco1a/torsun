@@ -4,7 +4,7 @@
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && umi dev",
     "dev": "umi dev",
-    "build": "umi build"
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && umi build"
   },
   "dependencies": {
     "@ant-design/compatible": "^1",

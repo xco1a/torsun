@@ -448,9 +448,9 @@ export const Footer10DataSource = {
         title: { children: "产品" },
         childWrapper: {
           children: [
-            { name: "link0", href: "#", children: "首页" },
-            { name: "link1", href: "#", children: "高精度车辆监控定位系统" },
-            { name: "link2", href: "#", children: "AI火焰识别系统" },
+            { name: "link0", href: "/", children: "首页" },
+            { name: "link1", href: "/car", children: "高精度车辆监控定位系统" },
+            { name: "link2", href: "/fire", children: "AI火焰识别系统" },
           ],
         },
       },
