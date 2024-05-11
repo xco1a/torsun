@@ -74,14 +74,14 @@ export default class Home extends React.Component {
         dataSource={Banner30DataSource}
         isMobile={this.state.isMobile}
       />,
-      <h1 className='home-title' id='car-detail-start' style={{marginTop:48}}>车辆监控定位系统方案</h1>,
+      <h1 className='home-title' id='car-detail-start' style={{marginTop:68}}>车辆监控定位系统方案</h1>,
       <Feature4
         id="Feature4_0"
         key="Feature4_0"
         dataSource={Feature40DataSource}
         isMobile={this.state.isMobile}
       />,
-      <h1 className='home-title' style={{marginTop:48,marginBottom:48}}>车辆监控定位系统功能</h1>,
+      <h1 className='home-title' style={{marginTop:118,marginBottom:48}}>车辆监控定位系统功能</h1>,
       <img src={CarLevel} className='hover-scale' style={{display: 'block',width:'100%',height:'auto',margin: 'auto',padding: '0 24px',maxWidth: '1200px'}} />,
       <Feature5
         id="Feature5_0"

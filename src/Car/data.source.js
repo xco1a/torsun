@@ -166,7 +166,8 @@ export const Feature50DataSource = {
       {
         name: 'title',
         children: '车辆监控定位系统服务',
-        className: 'title-h1',
+        className: 'home-title',
+        style: {marginTop: 118,width: '100%',textAlign: 'center'},
       },
       { name: 'content', children: '' },
     ],

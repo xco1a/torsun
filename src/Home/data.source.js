@@ -276,8 +276,8 @@ export const Content130DataSource = {
                 ></path>
               </svg>
             </div>
-            <a href='tel:15641696908' style={{ display: "inline-block", lineHeight: "54px", color: 'white' }}>
-              156-4169-6908
+            <a href='tel:13677066692' style={{ display: "inline-block", lineHeight: "54px", color: 'white' }}>
+              136-7706-6692
             </a>
           </div>
         ),
@@ -477,7 +477,7 @@ export const Footer10DataSource = {
       <div><span>
         ©2024 <a href="#">苏州拓晟数创视觉科技有限公司</a> All Rights Reserved.
       </span>
-      <span>LTD苏ICP备11111111号</span></div>
+      <span>LTD苏ICP备2024099080号</span></div>
     ),
   },
 };

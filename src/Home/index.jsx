@@ -78,7 +78,7 @@ export default class Home extends React.Component {
         dataSource={Feature00DataSource}
         isMobile={this.state.isMobile}
       />,
-      <h1 className='home-title'>推荐产品</h1>,
+      <h1 className='home-title' style={{marginTop:"118px"}}>推荐产品</h1>,
       <Feature1
         id="Feature1_0"
         key="Feature1_0"

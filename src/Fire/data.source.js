@@ -39,7 +39,8 @@ export const Feature40DataSource = {
       {
         name: 'title',
         children: 'AI火焰识别系统架构',
-        className: 'title-h1',
+        className: 'home-title',
+        style: {marginTop: 48,width: '100%'}
       },
       {
         name: 'content',
@@ -56,48 +57,7 @@ export const Feature40DataSource = {
   },
   block: {
     children: [
-      {
-        name: 'block0',
-        img: {
-          children:
-            'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
-          className: 'fire-content6-icon',
-        },
-        title: { className: 'fire-content6-title', children: '技术' },
-        content: {
-          className: 'fire-content6-content',
-          children:
-            '丰富的技术组件，简单组装即可快速搭建金融级应用，丰富的技术组件，简单组装即可快速搭建金融级应用。',
-        },
-      },
-      {
-        name: 'block1',
-        img: {
-          className: 'fire-content6-icon',
-          children:
-            'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
-        },
-        title: { className: 'fire-content6-title', children: '融合' },
-        content: {
-          className: 'fire-content6-content',
-          children:
-            '解放业务及技术生产力，推动金融服务底层创新，推动金融服务底层创新。解放业务及技术生产力，推动金融服务底层创新。',
-        },
-      },
-      {
-        name: 'block2',
-        img: {
-          className: 'fire-content6-icon',
-          children:
-            'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png',
-        },
-        title: { className: 'fire-content6-title', children: '开发' },
-        content: {
-          className: 'fire-content6-content',
-          children:
-            '符合金融及要求的安全可靠、高可用、高性能的服务能力，符合金融及要求的安全可靠、高可用、高性能的服务能力。',
-        },
-      },
+      
     ],
   },
 };
@@ -111,7 +71,8 @@ export const Feature50DataSource = {
       {
         name: 'title',
         children: '产品服务',
-        className: 'title-h1',
+        className: 'home-title',
+        style: {marginTop: 118,width: '100%'},
       },
       { name: 'content', children: '' },
     ],
@@ -248,6 +209,7 @@ export const Content00DataSource = {
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper home-title',
+    style: {marginTop: 118, fontWeight: 'bold'},
     children: [{ name: 'title', children: '产品功能' }],
   },
   childWrapper: {
@@ -425,7 +387,8 @@ export const Content30DataSource = {
       {
         name: 'title',
         children: '产品优势',
-        className: 'title-h1',
+        className: 'home-title',
+        style: {marginTop: 68,width: '100%'},
       },
       {
         name: 'content',
