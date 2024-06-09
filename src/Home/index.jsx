@@ -94,7 +94,7 @@ export default class Home extends React.Component {
       />,
       <h1 className='home-title' style={{marginTop: '128px'}}>应用场景</h1>,
       <Content5
-        id="Content5_0"
+        id="home-Content5_0"
         key="Content5_0"
         dataSource={Content50DataSource}
         isMobile={this.state.isMobile}

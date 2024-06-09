@@ -1,6 +1,6 @@
 @content5: home-content5;
-.@{content5}-wrapper {
-  background-color: #fff;
+#home-Content5_0 {
+  // background-color: #fff;
   min-height: 720px;
   
 
@@ -17,7 +17,7 @@
         margin-bottom: 24px;
         .content5-block-content {
           display: block;
-          background: #fff;
+          background-color: #fefcfd;
           border-radius: 4px;
           padding: 10px;
           text-align: center;
@@ -55,9 +55,12 @@
 
 @media screen and (max-width: 767px) {
   .@{content5}-wrapper {
-    height: 2000px;
+    height: 1400px;
     overflow: hidden;
     .@{content5} {
+      .block{
+        flex: 1,
+      }
       ul {
         li {
           display: block;
