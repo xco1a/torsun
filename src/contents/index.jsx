@@ -3,24 +3,18 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Nav3 from './Nav3';
-import Banner1 from './Banner1';
-import Content13 from './Content13';
-import Feature1 from './Feature1';
-import Feature0 from './Feature0';
-import Content0 from './Content0';
 import Content5 from './Content5';
-import Footer1 from './Footer1';
+import Content12 from './Content12';
+import Feature8 from './Feature8';
+import Teams2 from './Teams2';
+import Teams1 from './Teams1';
 
 import {
-  Nav30DataSource,
-  Banner10DataSource,
-  Feature10DataSource,
-  Feature00DataSource,
-  Content130DataSource,
   Content50DataSource,
-  Footer10DataSource,
-  Content00DataSource,
+  Content120DataSource,
+  Feature80DataSource,
+  Teams20DataSource,
+  Teams10DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 
@@ -60,56 +54,34 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Nav3
-        id="Nav3_0"
-        key="Nav3_0"
-        dataSource={Nav30DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Banner1
-        id="Banner1_0"
-        key="Banner1_0"
-        dataSource={Banner10DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <h1 className='home-title' style={{marginTop:48}}>解决方案</h1>,
-      <Feature0
-        id="home-Feature0_0"
-        key="Feature0_0"
-        dataSource={Feature00DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <h1 className='home-title' style={{marginTop:"118px"}}>推荐产品</h1>,
-      <Feature1
-        id="Feature1_0"
-        key="Feature1_0"
-        dataSource={Feature10DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content0
-        id="Content0_0"
-        key="Content0_0"
-        dataSource={Content00DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <h1 className='home-title' style={{marginTop: '128px'}}>应用场景</h1>,
       <Content5
         id="Content5_0"
         key="Content5_0"
         dataSource={Content50DataSource}
         isMobile={this.state.isMobile}
       />,
-
-      <Content13
-        id="Content13_0"
-        key="Content13_0"
-        dataSource={Content130DataSource}
+      <Content12
+        id="Content12_0"
+        key="Content12_0"
+        dataSource={Content120DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Footer1
-        id="Footer1_0"
-        key="Footer1_0"
-        dataSource={Footer10DataSource}
+      <Feature8
+        id="Feature8_0"
+        key="Feature8_0"
+        dataSource={Feature80DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Teams2
+        id="Teams2_0"
+        key="Teams2_0"
+        dataSource={Teams20DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Teams1
+        id="Teams1_0"
+        key="Teams1_0"
+        dataSource={Teams10DataSource}
         isMobile={this.state.isMobile}
       />,
     ];

@@ -5,6 +5,39 @@ import Logo from "../assets/logo.png";
 import HomeBoxPng from "@/assets/home_box.png";
 import CarPng from "@/assets/car.png";
 import FirePng from "@/assets/fire.png";
+import HomeAlgoIcon1 from "@/assets/home_algo_icon/xiaofanggongcheng.svg";
+import HomeAlgoIcon2 from "@/assets/home_algo_icon/renyuananquan.svg";
+import HomeAlgoIcon3 from "@/assets/home_algo_icon/chelianganquan.svg";
+import HomeAlgoIcon4 from "@/assets/home_algo_icon/hangweifenxi.svg";
+import HomeAlgoIcon5 from "@/assets/home_algo_icon/anfangjiankong.svg";
+import HomeAlgoIcon6 from "@/assets/home_algo_icon/huanbaojiankong.svg";
+
+import HomeSceneGIcon1 from "@/assets/home_scene_icon/gaokongpaowu.svg";
+import HomeSceneGIcon2 from "@/assets/home_scene_icon/yanhuojiance.svg";
+import HomeSceneGIcon3 from "@/assets/home_scene_icon/face-mask.svg";
+import HomeSceneGIcon4 from "@/assets/home_scene_icon/maozi.svg";
+import HomeSceneGIcon5 from "@/assets/home_scene_icon/fanguangyi.svg";
+import HomeSceneGIcon6 from "@/assets/home_scene_icon/shuaidao.svg";
+import HomeSceneGIcon7 from "@/assets/home_scene_icon/mbile.svg";
+import HomeSceneGIcon8 from "@/assets/home_scene_icon/ligang.svg";
+import HomeSceneGIcon9 from "@/assets/home_scene_icon/shuigangjiance.svg";
+import HomeSceneGIcon10 from "@/assets/home_scene_icon/fenxiangchaxun_bodashouji.svg";
+import HomeSceneGIcon11 from "@/assets/home_scene_icon/wanshoujijiance.svg";
+import HomeSceneGIcon12 from "@/assets/home_scene_icon/renyuanxiyan.svg";
+import HomeSceneGIcon13 from "@/assets/home_scene_icon/quyuruqin.svg";
+import HomeSceneGIcon14 from "@/assets/home_scene_icon/vehicle-violation.svg";
+import HomeSceneGIcon15 from "@/assets/home_scene_icon/keliutongji.svg";
+import HomeSceneGIcon16 from "@/assets/home_scene_icon/renshutongji.svg";
+import HomeSceneGIcon17 from "@/assets/home_scene_icon/gongfujiance.svg";
+import HomeSceneGIcon18 from "@/assets/home_scene_icon/xiaofangtongdaozhanyong.svg";
+import HomeSceneGIcon19 from "@/assets/home_scene_icon/lajitongmanyi.svg";
+import HomeSceneGIcon20 from "@/assets/home_scene_icon/chuyulaji-guopi.svg";
+import HomeSceneGIcon21 from "@/assets/home_scene_icon/erji-renyuanchuangru.svg";
+import HomeSceneGIcon22 from "@/assets/home_scene_icon/knife-kitchen.svg";
+import HomeSceneGIcon23 from "@/assets/home_scene_icon/baojinghangwei-renshuyichang.svg";
+import HomeSceneGIcon24 from "@/assets/home_scene_icon/paihuai.svg";
+
+
 
 export const Nav30DataSource = {
   wrapper: { className: "header3 home-page-wrapper" },
@@ -121,7 +154,11 @@ export const Banner10DataSource = {
           children:
             "厂区人员定位、车站作业车辆监控、仓储物料监管等场景解决方案",
         },
-        button: { className: "banner1-button", children: "了解更多", onClick: () => history.push("/car") },
+        button: {
+          className: "banner1-button",
+          children: "了解更多",
+          onClick: () => history.push("/car"),
+        },
       },
       {
         name: "elem2",
@@ -136,7 +173,11 @@ export const Banner10DataSource = {
           className: "banner1-content",
           children: "实时检测识别各种类型的火焰，有效预防火灾隐患",
         },
-        button: { className: "banner1-button", children: "了解更多", onClick: () => history.push("/fire") },
+        button: {
+          className: "banner1-button",
+          children: "了解更多",
+          onClick: () => history.push("/fire"),
+        },
       },
     ],
   },
@@ -150,22 +191,31 @@ export const Feature10DataSource = {
     children: HomeBoxPng,
   },
   textWrapper: { className: "homepage-content1-text", md: 14, xs: 24 },
-  title: { className: "homepage-content1-title", children: "边缘计算智能分析盒" },
+  title: {
+    className: "homepage-content1-title",
+    style: { marginBpttom: "12px" },
+    children: "前端计算智能分析盒",
+  },
   content: {
     className: "homepage-content1-content",
-    children:
-      "集视频接入、数据传输、数据存储、视觉分析算法、视频流媒体等多种技术为一体的边缘计算产品。",
+    children: (
+      <div>
+        <p>
+          集视频接入、数据传输、数据存储、视觉分析算法、视频流媒体等多种技术为一体的前端计算智能AI分析微服务器产品。
+        </p>
+        <br/>
+        <p>
+          支持4路、8路、16路、32路等多路视频接入，支持H.264、H.265、MJPEG等多种视频编码格式，支持RTSP、RTMP、HTTP、ONVIF等多种视频流传输协议，支持本地存储、云存储、FTP存储等多种存储方式，覆盖工业、家用多种应用场景。
+        </p>
+      </div>
+    ),
   },
 };
 
 export const Feature00DataSource = {
-  wrapper: { className: "home-page-wrapper home-content0-wrapper" },
-  page: { className: "home-page home-content0" },
+  wrapper: { className: "home-content0-wrapper home-page-wrapper " },
+  page: { className: " home-content0 home-page" },
   OverPack: { playScale: 0.3, className: "" },
-  titleWrapper: {
-    className: "title-wrapper",
-    children: [],
-  },
   childWrapper: {
     className: "home-content0-block-wrapper",
     children: [
@@ -226,7 +276,6 @@ export const Feature00DataSource = {
   },
 };
 
-
 export const Content130DataSource = {
   OverPack: {
     className: "home-page-wrapper content13-wrapper",
@@ -253,7 +302,14 @@ export const Content130DataSource = {
       {
         name: "content2",
         children: (
-          <div style={{ display: "flex", justifyContent: "center", marginTop: '48px', fontSize: '38px' }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "48px",
+              fontSize: "38px",
+            }}
+          >
             <div style={{ display: "inline-block" }}>
               <svg
                 style={{ width: "54px", height: "54px" }}
@@ -276,7 +332,14 @@ export const Content130DataSource = {
                 ></path>
               </svg>
             </div>
-            <a href='tel:13677066692' style={{ display: "inline-block", lineHeight: "54px", color: 'white' }}>
+            <a
+              href="tel:13677066692"
+              style={{
+                display: "inline-block",
+                lineHeight: "54px",
+                color: "white",
+              }}
+            >
               136-7706-6692
             </a>
           </div>
@@ -286,6 +349,527 @@ export const Content130DataSource = {
     ],
   },
 };
+
+export const Content50DataSource = {
+  wrapper: { className: "home-page-wrapper home-content5-wrapper" },
+  page: { className: "home-page home-content5" },
+  OverPack: { playScale: 0.3, className: "" },
+  titleWrapper: {
+    className: "title-wrapper",
+    children: [
+      // { name: 'title', children: '客户案例', className: 'title-h1' },
+      {
+        name: "content",
+        className: "title-content",
+        children: "算法多样化，全场景AI监控预警",
+      },
+    ],
+  },
+  block: {
+    className: "home-content5-img-wrapper",
+    gutter: 16,
+    children: [
+      {
+        name: "block0",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children: window.location.protocol + '//' + window.location.host + HomeSceneGIcon1,
+          },
+          content: { children: "高空抛物检测" },
+        },
+      },
+      {
+        name: "block1",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+            window.location.protocol + '//' + window.location.host + HomeSceneGIcon2,
+          },
+          content: { children: "烟火检测" },
+        },
+      },
+      {
+        name: "block2",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon3,
+          },
+          content: { children: "未佩戴口罩检测" },
+        },
+      },
+      {
+        name: "block3",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+            window.location.protocol + '//' + window.location.host + HomeSceneGIcon4,
+          },
+          content: { children: "安全帽检测" },
+        },
+      },
+      {
+        name: "block4",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon5,
+          },
+          content: { children: "反光衣检测" },
+        },
+      },
+      {
+        name: "block5",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon6,
+          },
+          content: { children: "人员摔倒检测" },
+        },
+      },
+      {
+        name: "block6",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon7,
+          },
+          content: { children: "电瓶车检测" },
+        },
+      },
+      {
+        name: "block7",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon8,
+          },
+          content: { children: "人员离岗检测" },
+        },
+      },
+      {
+        name: "block8",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon9,
+          },
+          content: { children: "人员睡岗检测" },
+        },
+      },
+      {
+        name: "block9",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon10,
+          },
+          content: { children: "人员打手机检测" },
+        },
+      },
+      {
+        name: "block10",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon11,
+          },
+          content: { children: "人员玩手机检测" },
+        },
+      },
+      {
+        name: "block11",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon12,
+          },
+          content: { children: "人员吸烟检测" },
+        },
+      },
+      {
+        name: "block12",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon13,
+          },
+          content: { children: "区域入侵检测" },
+        },
+      },
+      {
+        name: "block13",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon14,
+          },
+          content: { children: "车辆违停检测" },
+        },
+      },
+      {
+        name: "block14",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon15,
+          },
+          content: { children: "出入口客流统计" },
+        },
+      },
+      {
+        name: "block15",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon16,
+          },
+          content: { children: "区域人数统计" },
+        },
+      },
+      {
+        name: "block16",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon17,
+          },
+          content: { children: "工服检测" },
+        },
+      },
+      {
+        name: "block17",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon18,
+          },
+          content: { children: "消防逃生通道占用检测" },
+        },
+      },
+      {
+        name: "block18",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon19,
+          },
+          content: { children: "垃圾桶满溢检测" },
+        },
+      },
+      {
+        name: "block19",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon20,
+          },
+          content: { children: "垃圾乱投落地检测" },
+        },
+      },
+      {
+        name: "block20",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+              window.location.protocol + '//' + window.location.host + HomeSceneGIcon21,
+          },
+          content: { children: "来人提醒" },
+        },
+      },
+      {
+        name: "block21",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+            window.location.protocol + '//' + window.location.host + HomeSceneGIcon22,
+          },
+          content: { children: "刀具检测" },
+        },
+      },
+      {
+        name: "block23",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+            window.location.protocol + '//' + window.location.host + HomeSceneGIcon23,
+          },
+          content: { children: "区域人数异常检测" },
+        },
+      },
+      {
+        name: "block22",
+        className: "block",
+        md: 3,
+        xs: 24,
+        children: {
+          wrapper: { className: "content5-block-content" },
+          img: {
+            children:
+            window.location.protocol + '//' + window.location.host + HomeSceneGIcon24,
+          },
+          content: { children: "人员徘徊检测" },
+        },
+      },
+      
+    ],
+  },
+};
+
+
+export const Content00DataSource = {
+  wrapper: { className: 'home-page-wrapper home-content0-wrapper' },
+  page: { className: 'home-page home-content0' },
+  OverPack: { playScale: 0.3, className: '' },
+  titleWrapper: {
+    className: 'title-wrapper home-title',
+    style: {marginTop: 118, fontWeight: 'bold'},
+    children: [{ name: 'title', children: '多样化行业算法' }],
+  },
+  childWrapper: {
+    className: 'home-content0-block-wrapper',
+    children: [
+      {
+        name: 'block0',
+        className: 'home-content0-block  hover-scale',
+        md: 4,
+        xs: 24,
+        children: {
+          className: 'home-content0-block-item',
+          children: [
+            {
+              name: 'image',
+              className: 'home-content0-block-icon',
+              children: <img src={HomeAlgoIcon1} />,
+            },
+            {
+              name: 'title',
+              className: 'home-content0-block-title',
+              children: '消防安全',
+            },
+            { name: 'content', children: '' },
+          ],
+        },
+      },
+      {
+        name: 'block1',
+        className: 'home-content0-block  hover-scale',
+        md: 4,
+        xs: 24,
+        children: {
+          className: 'home-content0-block-item',
+          children: [
+            {
+              name: 'image',
+              className: 'home-content0-block-icon',
+              children: <img src={HomeAlgoIcon2} />,
+            },
+            {
+              name: 'title',
+              className: 'home-content0-block-title',
+              children: '人员安全',
+            },
+            {
+              name: 'content',
+              children: '',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block2',
+        className: 'home-content0-block  hover-scale',
+        md: 4,
+        xs: 24,
+        children: {
+          className: 'home-content0-block-item',
+          children: [
+            {
+              name: 'image',
+              className: 'home-content0-block-icon',
+              children: <img src={HomeAlgoIcon3} />,
+            },
+            {
+              name: 'title',
+              className: 'home-content0-block-title',
+              children: '车辆安全',
+            },
+            {
+              name: 'content',
+              children: '',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block0',
+        className: 'home-content0-block  hover-scale',
+        md: 4,
+        xs: 24,
+        children: {
+          className: 'home-content0-block-item',
+          children: [
+            {
+              name: 'image',
+              className: 'home-content0-block-icon',
+              children: <img src={HomeAlgoIcon4} />,
+            },
+            {
+              name: 'title',
+              className: 'home-content0-block-title',
+              children: '行为分析',
+            },
+            { name: 'content', children: '' },
+          ],
+        },
+      },
+      {
+        name: 'block1',
+        className: 'home-content0-block  hover-scale',
+        md: 4,
+        xs: 24,
+        children: {
+          className: 'home-content0-block-item',
+          children: [
+            {
+              name: 'image',
+              className: 'home-content0-block-icon',
+              children: <img src={HomeAlgoIcon5} />,
+            },
+            {
+              name: 'title',
+              className: 'home-content0-block-title',
+              children: '环保监控',
+            },
+            {
+              name: 'content',
+              children: '',
+            },
+          ],
+        },
+      },
+      {
+        name: 'block2',
+        className: 'home-content0-block  hover-scale',
+        md: 4,
+        xs: 24,
+        children: {
+          className: 'home-content0-block-item',
+          children: [
+            {
+              name: 'image',
+              className: 'home-content0-block-icon',
+              children: <img src={HomeAlgoIcon6} />,
+            },
+            {
+              name: 'title',
+              className: 'home-content0-block-title',
+              children: '区域监测',
+            },
+            {
+              name: 'content',
+              children: '',
+            },
+          ],
+        },
+      },
+    ],
+  },
+};
+
 export const Content90DataSource = {
   wrapper: { className: "home-page-wrapper content9-wrapper" },
   page: { className: "home-page content9" },
@@ -428,7 +1012,13 @@ export const Footer10DataSource = {
         className: "block",
         title: {
           className: "logo",
-          children: <img src={Logo} alt="logo" style={{ width: '180px', height: '52px', objectFit: 'cover' }} />,
+          children: (
+            <img
+              src={Logo}
+              alt="logo"
+              style={{ width: "180px", height: "52px", objectFit: "cover" }}
+            />
+          ),
         },
         childWrapper: {
           className: "slogan",
@@ -461,12 +1051,9 @@ export const Footer10DataSource = {
         className: "block",
         title: { children: "关于" },
         childWrapper: {
-          children: [
-            { href: "/about", name: "link1", children: "联系我们" },
-          ],
+          children: [{ href: "/about", name: "link1", children: "联系我们" }],
         },
       },
-
     ],
   },
   copyrightWrapper: { className: "copyright-wrapper" },
@@ -474,10 +1061,13 @@ export const Footer10DataSource = {
   copyright: {
     className: "copyright",
     children: (
-      <div><span>
-        ©2024 <a href="#">苏州拓晟数创视觉科技有限公司</a> All Rights Reserved.
-      </span>
-      <span>LTD苏ICP备2024099080号</span></div>
+      <div>
+        <span>
+          ©2024 <a href="#">苏州拓晟数创视觉科技有限公司</a> All Rights
+          Reserved.
+        </span>
+        <span>LTD苏ICP备2024099080号</span>
+      </div>
     ),
   },
 };
