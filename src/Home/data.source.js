@@ -194,7 +194,7 @@ export const Feature10DataSource = {
   title: {
     className: "homepage-content1-title",
     style: { marginBpttom: "12px" },
-    children: "前端计算智能分析盒",
+    children: "前端计算智能分析一体机",
   },
   content: {
     className: "homepage-content1-content",
