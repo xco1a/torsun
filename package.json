@@ -4,8 +4,10 @@
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && umi dev",
     "dev": "umi dev",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider && umi build && scp -r ./dist/* root@8.149.139.111:/usr/share/nginx/html/",
-    "mbuild": "umi build && scp -r ./dist/* root@8.149.139.111:/usr/share/nginx/html/"
+    "build": "umi build",
+    "lbuild": "export NODE_OPTIONS=--openssl-legacy-provider && umi build",
+    "upload": "scp -r ./dist/* root@8.149.139.111:/usr/share/nginx/html/",
+    "update": "umi build && scp -r ./dist/* root@8.149.139.111:/usr/share/nginx/html/"
   },
   "dependencies": {
     "@ant-design/compatible": "^1",
