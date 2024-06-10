@@ -2,6 +2,8 @@ import React from "react";
 import { history } from "umi";
 
 import BoxDetail from "@/assets/box_detail.png";
+import TsArch from "@/assets/ts_arch.png"
+
 import BoxFeatureIcon1 from "@/assets/box_feature_icon/shebeiguanli.svg";
 import BoxFeatureIcon2 from "@/assets/box_feature_icon/gaojingzhongxin.svg";
 import BoxFeatureIcon3 from "@/assets/box_feature_icon/jiashicang.svg";
@@ -371,6 +373,40 @@ export const Content30DataSource = {
           },
         },
       },
+    ],
+  },
+};
+
+
+export const Feature41DataSource = {
+  wrapper: { className: "home-page-wrapper box-content6-wrapper" },
+  OverPack: { className: "home-page box-content6" },
+  textWrapper: { className: "box-content6-text", xs: 24, md: 10 },
+  titleWrapper: {
+    className: "title-wrapper",
+    children: [
+      {
+        name: "title",
+        children: "",
+        className: "title-h1",
+      },
+      {
+        name: "content",
+        className: "title-content",
+        children:
+          "拓晟智能节点管理平台经典架构方案，支持一个平台统管多个边缘节点，支持节点水平扩展，支持节点快速上下线",
+      },
+    ],
+  },
+  img: {
+    children: TsArch,
+    className: "box-content6-img hover-scale",
+    xs: 24,
+    md: 24,
+  },
+  block: {
+    children: [
+      
     ],
   },
 };

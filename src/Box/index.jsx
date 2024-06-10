@@ -15,6 +15,7 @@ import Content13 from '../Home/Content13';
 import {
   Banner30DataSource,
   Feature40DataSource,
+  Feature41DataSource,
   Content30DataSource,
 } from './data.source';
 import { Nav30DataSource,Footer10DataSource,Content130DataSource } from '../Home/data.source';
@@ -83,6 +84,14 @@ export default class Box extends React.Component {
         id="Content3_0"
         key="Content3_0"
         dataSource={Content30DataSource}
+        isMobile={this.state.isMobile}
+      />,
+
+      <h1 className='home-title' style={{marginTop:68}}>拓晟智能节点管理平台拓扑</h1>,
+      <Feature4
+        id="box_Feature4_1"
+        key="Feature4_1"
+        dataSource={Feature41DataSource}
         isMobile={this.state.isMobile}
       />,
 
