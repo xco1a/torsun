@@ -67,6 +67,27 @@ export const Nav30DataSource = {
         },
         subItem: [
           {
+            name: "box",
+            className: "item-sub",
+            href: "/box",
+            onClick: () => history.push("/box"),
+            children: {
+              className: "item-sub-item",
+              children: [
+                {
+                  name: "title",
+                  className: "item-title",
+                  children: "前端计算智能分析一体机",
+                },
+                {
+                  name: "content",
+                  className: "item-content",
+                  children: "国产供应链联合打造，百分百自主可控",
+                },
+              ],
+            },
+          },
+          {
             name: "car",
             className: "item-sub",
             href: "/car",
